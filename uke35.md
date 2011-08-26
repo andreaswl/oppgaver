@@ -1,4 +1,3 @@
-
 ## Oppgaver uke 35
 
 Denne uken er målet å komme i gang med C. Vi begynner med det som er mest naturlig når man kommer fra Java. Først noen begreper:
@@ -87,9 +86,10 @@ Skriv programmet `abbr`, som tar en setning som parameter, og skriver ut den fø
 B)
 Utvid programmet med en ekstra parameter som angir hvor mange bokstaver som skal plukkes med fra hvert ord. Pass på at du ikke leser for langt og inn i neste ord når ordene er korte. Eksempel:
 
-    $ ./abbr 3 "ti fugler i fuglebadet"
+    $ ./abbr "ti fugler i fuglebadet" 3
     tifugifug
 
+(oppdatert 36.aug)
 
 #### 5:
 
