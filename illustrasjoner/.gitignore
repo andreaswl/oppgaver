@@ -1,0 +1,7 @@
+
+*.swp
+a.out
+*.o
+cli
+rbuftest
+server
