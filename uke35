@@ -47,6 +47,7 @@ I Fibonacci-rekken er hele tiden neste tall lik summen av de to foregående:
 
 A) Lag et program som skriver ut alle fibonacci-tallene (går evig).
 B) Lag et program som skriver ut Fibonacci-tallet på en gitt plass. For eksempel:
+$ gcc -o fib fibonacci.c
 $ fib 7
 13
 
