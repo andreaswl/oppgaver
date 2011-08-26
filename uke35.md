@@ -12,7 +12,7 @@ Denne uken er målet å komme i gang med C. Vi begynner med det som er mest natu
 
 For å finne ut hvilke `man` sider som inneholder info om et betemt tema, kan kommandoene `apropos` og `whatis` brukes. Prøv for eksempel:
         
-    ~$ whatis printf
+    $ whatis printf
 
 Det forteller oss at det finnes flere *tema* som heter *printf*, og ved 
 hjelp av litt prøving og feiling finner vi ut at ``man 3 printf`` 
