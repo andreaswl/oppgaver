@@ -46,7 +46,7 @@ B) Lag et program som skriver ut Fibonacci-tallet på en gitt plass. For eksempe
 
 #### 2:
 
-Programmet "repeat" tar to kommandolinje-argumenter; et heltall og en beskjed. Når det kjøres skriver det ut beskjeden så mange ganger, adskilt av mellomrom. Eksempel:
+Skriv programmet "repeat", som tar to kommandolinje-argumenter; et heltall og en beskjed. Når det kjøres skriver det ut beskjeden så mange ganger, adskilt av mellomrom. Eksempel:
 
     $ gcc -o repeat repeat.c
     $ ./repeat 3 Hurra!
