@@ -1,21 +1,24 @@
 
+#include <stdio.h>
+#include <stdlib.h>
 
 /* Oppgave 1: Fibonacci-tall */
 
 
 
-void printfibs()
+void print_fibs()
 {
-    int a, b, sum;
+    unsigned int a, b, sum;
     a = 0;
     b = 1;
 
     while(1)
     {
-        printf("%d, ", a);
+        printf("%d\n", a);
         sum = a + b;
         a   = b;
         b   = sum;
+        if (a > 100000) break;
     }
 }
 
@@ -38,11 +41,11 @@ int main(int argc, char* argv[])
         int num;
 
         case 1:
-            printfibs();
+            print_fibs();
             break;
         case 2:
             num = fib(atoi(argv[1]));
-            printf("%d\n", num)
+            printf("%d\n", num);
             break;
         default:
             printf("For mange parametre.\n");
