@@ -1,5 +1,4 @@
 
-
 ## Oppgaver uke 35
 
 Denne uken er målet å komme i gang med C. Vi begynner med det som er mest naturlig når man kommer fra Java. Først noen begreper:
@@ -36,7 +35,7 @@ I Fibonacci-rekken er hele tiden neste tall lik summen av de to foregående:
 
     0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
 
-A) Lag et program som skriver ut alle fibonacci-tallene (går evig).
+A) Lag et program som skriver ut alle fibonacci-tallene under hundre tusen. (endret 26.aug)
 
 B) Lag et program som skriver ut Fibonacci-tallet på en gitt plass. For eksempel:
 
