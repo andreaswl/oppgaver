@@ -4,11 +4,11 @@
 
 Denne uken er målet å komme i gang med C. Vi begynner med det som er mest naturlig når man kommer fra Java. Først noen begreper:
 
-*Kommandolinjeargument: * Argumenter/parametere til programmet når det kjøres. F.eks. er `hello.c` et argument til programmet `gcc` når vi kjører:
+**Kommandolinjeargument:** Argumenter/parametere til programmet når det kjøres. F.eks. er `hello.c` et argument til programmet `gcc` når vi kjører:
 
     ~$ gcc hello.c
 
-*Man-side:* `man` er et program i linux (og andre operativsystemer) som brukes for å lese dokumentasjon og manualer. Det finnes mye informasjon om C, CPP, gcc &amp; co i `man`. For å få hjelp med printf kan du for eksempel kjøre:
+**Man-side:** `man` er et program i linux (og andre operativsystemer) som brukes for å lese dokumentasjon og manualer. Det finnes mye informasjon om C, CPP, gcc &amp; co i `man`. For å få hjelp med printf kan du for eksempel kjøre:
 
     $ man 3 printf
 
@@ -19,9 +19,9 @@ For å finne ut hvilke `man` sider som inneholder info om et betemt tema, kan ko
 Det forteller oss at det finnes flere *tema* som heter *printf*, og ved 
 hjelp av litt prøving og feiling finner vi ut at ``man 3 printf`` 
 er C-funksjonen vi leter etter. Merk at alle standard C funksjoner 
-er i *seksjon 3*. Man kan også finne de fleste man sider via Google.
+er i *seksjon 3*. Man kan også finne de fleste man-sider via Google.
 
-*cstring:* `cstring` er standardmåten å representere en streng på i C. Når man skriver "hallo", i et C-program, er det en cstring. En cstring er en char-array, der slutten markeres med en byte som har verdien null ("\0"). Derfor sier man at en cstring er en null-terminert char array. Dette blir det mer snakk om senere.
+**cstring:** "cstring" er standardmåten å representere en streng på i C. Når man skriver "hallo", i et C-program, er det en cstring. En cstring er en char-array, der slutten markeres med en byte som har verdien null `"\0"`. Derfor sier man at en cstring er en null-terminert char array. Dette blir det mer snakk om senere.
     
 
 ### Oppgavene:
@@ -37,6 +37,7 @@ I Fibonacci-rekken er hele tiden neste tall lik summen av de to foregående:
     0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
 
 A) Lag et program som skriver ut alle fibonacci-tallene (går evig).
+
 B) Lag et program som skriver ut Fibonacci-tallet på en gitt plass. For eksempel:
 
     $ gcc -o fib fibonacci.c
@@ -56,7 +57,7 @@ Programmet "repeat" tar to kommandolinje-argumenter; et heltall og en beskjed. N
 Hint:
 
 - Se man-siden til atoi (man 3 atoi)
-- main(int arc, char *argv[])
+- `main(int arc, char *argv[])`
 
 
 #### 3:
@@ -66,11 +67,11 @@ tommer. (Det er 12 tommer i en fot.) Programmet bør helst håndtere uventede ve
 
 Eksempel på kjøring::
 
-    $ ./fot 10
+    $ ./foot 10
     10 inches is 0 foot and 10 inches.
-    $ ./fot 76
+    $ ./foot 76
     76 inches is 6 foot and 4 inches.
-    $ ./fot apekatt
+    $ ./foot apekatt
     Bad input. You must provide a number.
 
 (oppdatert 26.aug)
@@ -79,7 +80,7 @@ Eksempel på kjøring::
 #### 4:
 
 A)
-Skriv programmet “abbr”, som tar en setning som parameter, og skriver ut den første bokstaven i hvert ord. For enkelhets skyld sier vi at ord er bokstaver som kommer etter mellomrom. Eksempel:
+Skriv programmet `abbr`, som tar en setning som parameter, og skriver ut den første bokstaven i hvert ord. For enkelhets skyld sier vi at ord er bokstaver som kommer etter mellomrom. Eksempel:
 
     $ ./abbr "det var en stormfull aften"
     dvesa
@@ -94,7 +95,7 @@ Utvid programmet med en ekstra parameter som angir hvor mange bokstaver som skal
 #### 5:
 
 A)
-Skriv programmet "gull", som har et kommandolinjegrensesnitt der man kan taste en bokstav og trykke enter for å kjøre en kommando. Kommandoen 'g' gir tilbake et gullkorn, og 'a' avslutter. Gullkornene kan implementeres fritt etter fantasien. Eksempel:
+Skriv programmet `gull`, som har et kommandolinjegrensesnitt der man kan taste en bokstav og trykke enter for å kjøre en kommando. Kommandoen `g` gir tilbake et gullkorn, og `a` avslutter. Gullkornene kan implementeres fritt etter fantasien. Eksempel:
 
     $ gull
     [g]ullkorn [a]vslutt > g
@@ -139,9 +140,9 @@ gir en feilmelding når `sum` blir feil.
 
 #### 8:
 
-I C bruker vi tallet `0` for å bety false, mens alle andre tall er true. Definer en makro `#define BOOL2S(a) ...` som blir til cstring-en "true" eller "false" avhengig av om argumentet er null eller ikke.
+I C bruker vi tallet `0` for å bety false, mens alle andre tall er true. Definer en makro `#define BOOL2S(a) ...` som blir til cstring-en "true" eller "false" avhengig av om argumentet er `0` eller ikke.
 
-Hint: Google etter "ternary operation"?
+Hint: Google: "ternary operation"
 
 
 #### 9:
@@ -174,11 +175,11 @@ Standardfunksjonen `int strcmp` sammenligner to tekster og returnerer et tall so
 
 Verdiene som returneres er:
 
-    | <0 om `s1` kommer før `s2`
-    | =0 om `s1` og `s2` er like
-    | >0 om `s1` kommer etter `s2`
+    | <0 om s1 kommer før s2
+    | =0 om s1 og s2 er like
+    | >0 om s1 kommer etter s2
 
-Skriv en ny funksjon kalt `strcmpx` i C, som gjør det samme, uten å bruke strcmp. Skriv også et testprogram som sammenligner de to metodene. Sørg for å teste med forskjellige typer strenger.
+Skriv en ny funksjon `strcmpx` i C, som gjør det samme, uten å bruke `strcmp`. Skriv også et testprogram som sammenligner de to metodene. Sørg for å teste med forskjellige typer strenger.
 
 
 #### Hvis du vil:
