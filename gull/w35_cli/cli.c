@@ -30,7 +30,7 @@ char Cli_choose()
     switch(choice = getc(stdin))
     {
       case 'g':   Cli_print_gem();  break;
-      case '\n':  Cli_menu_prompt();    break;
+      case '\n':  Cli_menu_prompt();break;
       case  -1:   choice = 'a';
       case 'a':   break;
       default:
