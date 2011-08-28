@@ -7,7 +7,7 @@
 void print_abbr(char* sentence, int grab_chars)
 {
     int i, grab_count;
-    
+
     grab_count = 0;
     for (i=0; i<strlen(sentence); i++) {
         if (sentence[i] == ' ') {

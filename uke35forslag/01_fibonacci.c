@@ -12,13 +12,12 @@ void print_fibs()
     a = 0;
     b = 1;
 
-    while(1)
+    while(a < 100000)
     {
         printf("%d\n", a);
         sum = a + b;
         a   = b;
         b   = sum;
-        if (a > 100000) break;
     }
 }
 
