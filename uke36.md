@@ -1,6 +1,7 @@
 
 Denne uken er noen av hovedtemaene minne og pekere, headere `cstring`-er, mer avanserte Make-filer, og programmer som er spredt over flere filer. Jeg anbefaler at de som ikke har sett på forrige ukes oppgaver titter litt på dem og.
 
+
 **Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header.
 
 **Peker:** Kort fortalt en minneadresse. Brukes mye i C. Se forelesningsfoilene. Vil også blir grundig repetert i timen.
