@@ -1,13 +1,13 @@
 
-Hovedtemaene denne uken er minne, pekere, headere, cstrings, bedre Make-filer, og hvordan man kan fordele kode over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, anbefaler jeg en rask titt. Jeg legger forresten ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov.
+Hovedtemaene denne uken er minne, pekere, headere, cstrings, bedre Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, anbefaler jeg en rask titt. Jeg legger forresten ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov.
 
 Noen begreper denne uken:
 
 **Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header-fil vi inkluderer fra standardbiblioteket.
 
-**Peker:** Grovt og enkelt kan man si at en peker er en minneadresse, som "peker" til en eller flere verdier et eller annet sted i minne. Pekere står sentralt i C, og blir grundig gjennomgått i plenumsgruppen.
+**Peker:** Grovt og enkelt kan man si at en peker er en minneadresse, som "peker" på en eller flere verdier et eller annet sted i minne. Pekere står sentralt i C, og blir grundig gjennomgått i plenumsgruppen.
 
-**Objektfil:** C-kode kan kompileres til objektfiler, som senere kan *lenkes* sammen med andre objektfiler, som sammen danner en kjørbar programfil. Dette gjør det for eksempel mulig å lenke mot biblioteker som allerede er kompilert.
+**Objektfil:** C-kode kan kompileres til objektfiler, som senere kan *lenkes* sammen med andre objektfiler, og sammen danne en kjørbar programfil. Dette gjør det for eksempel mulig å lenke mot *biblioteker* som allerede er kompilert på maskinen.
 
 
 ### Oppgaveforslag uke 36:
@@ -76,41 +76,44 @@ D)
 Skriv en Makefile som kan kompilere objekt-filene, og lenke de sammen for å få et kjørbart program. Definer handlingen `make clean`, som rydder opp (sletter de kompilerte filene). Definer handlingen `make all`, som kompilerer alt (foreløpig bare cli-et og objektfilene).
 
 E)
-Det ligger mye info Make ute på nettet. [Siden om Make på Wikipedia](http://en.wikipedia.org/wiki/Make_(software)) kan være verdt et besøk. Eksperimenter litt med eksemplene og se om det er noe du kan ha nytte av i dine egne Makefiles. Vi kommer til å lage en mer avansert og fleksibel Makefile for `gull` i gruppetimen. 
+Det ligger mye info om Make ute på nettet. [Siden om Make på Wikipedia](http://en.wikipedia.org/wiki/Make_(software)) kan være verdt et besøk. Eksperimenter litt med eksemplene og se om det er noe du kan ha nytte av i dine egne Makefiles. Vi kommer til å lage en mer avansert og fleksibel Makefile for `gull` i gruppetimen. 
 
 
 #### 7:
 
-Vi skal nå prøve å skrive mer objektorientert kode i C. Eksempelet vi tar utgangspunkt i er et personregister. Hver person har et navn (`char *`) og en alder (`short int`). Da hadde det kanskje vært praktisk med person-objekter?
+Vi skal nå prøve å skrive mer objektorientert kode i C. Eksempelet vi tar utgangspunkt i er et personregister. Hver person har et navn (`char *`) og en alder (`short int`). Da hadde det jo vært praktisk med person-objekter..
 
-C har ingen støtte for klasser eller objekter i tradisjonell forstand, så objektorienteringen må gjøres på en litt annen måte. Vi kan for eksempel allokere minne til en person-strukt, og gi pekeren til funksjoner som bearbeider strukten på forskjellige måter.
+C har ingen støtte for klasser eller objekter i samme forstand som Java eller Python, så objektorienteringen må gjøres på en litt annen måte. Vi kan for eksempel allokere minne for en person-strukt, og gi pekeren til funksjoner som bearbeider strukten på forskjellige måter.
 
 A)
-Skriv strukten `person_s`, på denne formen:
+Skriv strukten `person_s` (med navn og alder, som angitt), på denne formen:
 
     typedef struct {
     ...
     } person_s;
 
 B)
-Skriv funksjonen `person_s* Person_new(short age, char* name)`, som allokerer minne for en person, skriver verdiene, og returnerer en peker til personen.
+Skriv funksjonen `person_s* Person_new(char* name, short age)`, som allokerer minne for en person, skriver verdiene, og returnerer en peker til personen.
 
 C)
-Skriv funksjonen `void Person_birthday(person_s* person)` som gjør personen et år eldre.
+Skriv funksjonen `void Person_birthday(person_s* person)` som gjør en person et år eldre.
 
 D)
-Skriv funksjonen `void Person_inspect(person_s* person)` som skriver ut personen i terminalen med navn og alder.
+Skriv funksjonen `void Person_inspect(person_s* person)` som skriver ut en person i terminalen med navn og alder.
 
 E)
 Skriv funksjonen `void Person_free(person_s* person)` som frigir minnet som ble brukt av personen.
 
 F)
-Hva synes du om funksjons-navnene som er foreslått her?
+Skriv et testprogram for å se at funksjonene du har skrevet fungerer.
 
 G)
-Hvordan kan vi håndtere eventuelle feil som oppstår i disse funksjonene? Implementer feilhåndtering hvis du har lyst.
+Hva synes du om funksjons-navnene som er foreslått her?
 
 H)
+Hvordan kan vi håndtere eventuelle feil som oppstår i disse funksjonene? Implementer feilhåndtering hvis du har lyst.
+
+I)
 Skriv personregisteret, med kommandolinje, der man kan..
 
 - Legge til personer
