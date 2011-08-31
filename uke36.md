@@ -1,11 +1,11 @@
 
-Hovedtemaene denne uken er minne, pekere, headere, cstrings, bedre Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, anbefaler jeg en rask titt. Jeg legger forresten ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov.
+Hovedtemaene denne uken er minne, pekere, headere, cstrings, bedre Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, kan det være greit å ta en titt. Jeg legger forresten ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov.
 
 Noen begreper denne uken:
 
 **Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header-fil vi inkluderer fra standardbiblioteket.
 
-**Peker:** Grovt og enkelt kan man si at en peker er en minneadresse, som "peker" på en eller flere verdier et eller annet sted i minne. Pekere står sentralt i C, og blir grundig gjennomgått i plenumsgruppen.
+**Peker:** Grovt og enkelt kan vi si at en peker er en minneadresse, som "peker" på en eller flere verdier, et eller annet sted i minne. Pekere står sentralt i C, og blir grundig gjennomgått i plenumsgruppen.
 
 **Objektfil:** C-kode kan kompileres til objektfiler, som senere kan *lenkes* sammen med andre objektfiler, og sammen danne en kjørbar programfil. Dette gjør det for eksempel mulig å lenke mot *biblioteker* som allerede er kompilert på maskinen.
 
@@ -73,10 +73,10 @@ C)
 Oppdater `cli.c` så den inkluderer `gem.h` og bruker funksjoner derfra for å få fatt på gullkorn.
 
 D)
-Skriv en Makefile som kan kompilere objekt-filene, og lenke de sammen for å få et kjørbart program. Definer handlingen `make clean`, som rydder opp (sletter de kompilerte filene). Definer handlingen `make all`, som kompilerer alt (foreløpig bare cli-et og objektfilene).
+Skriv en Makefile som kan kompilere objekt-filene, og lenke dem sammen for å få et kjørbart program. Definer handlingen `make clean`, som rydder opp (sletter de kompilerte filene). Definer handlingen `make all`, som kompilerer alt (foreløpig bare cli-et og objektfilene).
 
 E)
-Det ligger mye info om Make ute på nettet. [Siden om Make på Wikipedia](http://en.wikipedia.org/wiki/Make_(software)) kan være verdt et besøk. Eksperimenter litt med eksemplene og se om det er noe du kan ha nytte av i dine egne Makefiles. Vi kommer til å lage en mer avansert og fleksibel Makefile for `gull` i gruppetimen. 
+Det ligger mye info om Make ute på nettet. [Siden om Make på Wikipedia](http://en.wikipedia.org/wiki/Make_(software)) kan være verdt et besøk. Eksperimenter litt med eksemplene og se om det er noe du kan ha nytte av i dine egne Make-filer. Vi kommer til å lage en mer avansert og fleksibel Makefile for `gull` i gruppetimen. 
 
 
 #### 7:
@@ -114,11 +114,11 @@ H)
 Hvordan kan vi håndtere eventuelle feil som oppstår i disse funksjonene? Implementer feilhåndtering hvis du har lyst.
 
 I)
-Skriv personregisteret, med kommandolinje, der man kan..
+Skriv personregisteret, med en kommandolinje der man kan..
 
 - Legge til personer
 - Fjerne personer
-- Se en liste over alle personer
+- Vise en liste over alle personer
 - Skrive registeret til en fil
 - Lese registeret fra en fil
 - Avslutte
