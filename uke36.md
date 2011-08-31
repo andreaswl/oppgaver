@@ -76,7 +76,7 @@ D)
 Skriv en Makefile som kan kompilere objekt-filene, og lenke dem sammen for å få et kjørbart program. Definer handlingen `make clean`, som rydder opp (sletter de kompilerte filene). Definer handlingen `make all`, som kompilerer alt (foreløpig bare cli-et og objektfilene).
 
 E)
-Det ligger mye info om Make ute på nettet. [Siden om Make på Wikipedia](http://en.wikipedia.org/wiki/Make_(software)) kan være verdt et besøk. Eksperimenter litt med eksemplene og se om det er noe du kan ha nytte av i dine egne Make-filer. Vi kommer til å lage en mer avansert og fleksibel Makefile for `gull` i gruppetimen. 
+Det ligger mye info om Make ute på nettet. [Siden om Make på Wikipedia][wpmake] kan være verdt et besøk. Eksperimenter litt med eksemplene og se om det er noe du kan ha nytte av i dine egne Make-filer. Vi kommer til å lage en mer avansert og fleksibel Makefile for `gull` i gruppetimen. 
 
 
 #### 7:
@@ -127,3 +127,4 @@ Skriv personregisteret, med en kommandolinje der man kan..
 
 Send gjerne inn spørsmål via gruppesiden.
 
+[wpmake]: http://en.wikipedia.org/wiki/Make_(software)
