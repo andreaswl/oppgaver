@@ -4,6 +4,8 @@ Denne uken blir det mer snakk om debugging, minnefeil og arbeid med filer. Vi g�
 
 Noen begreper:
 
+**
+
 **segfault:** Segmentation fault; en feil som oppstår når man prøver å arbeide med minneadresser man egentlig ikke har noe med.
 
 

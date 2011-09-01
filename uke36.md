@@ -1,13 +1,15 @@
 
-Hovedtemaene denne uken er minne, pekere, headere, cstrings, bedre Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, kan det være greit å ta en titt. Jeg legger forresten ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov.
+Hovedtemaene denne uken blir minne, pekere, headere, cstrings, Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, kan det være greit å ta en titt. Jeg legger ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov. Oppgavene kan være litt vanskelige i begynnelsen, men vi kommer til å vende tilbake til disse temaene gjennom hele semesteret.
 
 Noen begreper denne uken:
 
-**Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header-fil vi inkluderer fra standardbiblioteket.
+**Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header-fil vi inkluderer fra standardbiblioteket. Det finnes også en annen type include: `#include "person.h"`. Her er `person.h` en headerfil i samme mappe som filen selv, altså gjerne en fil vi gjerne har skrevet selv.
 
 **Peker:** Grovt og enkelt kan vi si at en peker er en minneadresse, som "peker" på en eller flere verdier, et eller annet sted i minne. Pekere står sentralt i C, og blir grundig gjennomgått i plenumsgruppen.
 
 **Objektfil:** C-kode kan kompileres til objektfiler, som senere kan *lenkes* sammen med andre objektfiler, og sammen danne en kjørbar programfil. Dette gjør det for eksempel mulig å lenke mot *biblioteker* som allerede er kompilert på maskinen.
+
+**Fildeskriptor:** En måte å håndtere arbeid med filer på i C-programmer. For å få tilgang til en fil kaller vi
 
 
 ### Oppgaveforslag uke 36:

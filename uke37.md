@@ -1,10 +1,14 @@
 
 
-Denne uken blir det mere arbeid med pekere og objektorientering. Vi ser nærmere på datastrukturer, minnefeil, debugging og filer. Dette er den siste timen med grunnleggende innføring i C. Det er viktig å forstå det vi har tatt opp i løpet av disse første tre gruppetimene for å ha et godt fundament i C.
+Denne uken blir det mer arbeid med pekere og objektorientering. Vi ser også nærmere på datastrukturer, minnefeil, debugging og filer. I løpet av disse tre første ukene skal vi ha dekket de viktigste områdene av C. Det er mye stoff -- og det er helt naturlig om man ikke henger helt med. De fleste av temaene vil bli tatt opp igjen senere.
 
-Fortvil ikke hvis noen ting fortsatt er uklare eller uforståelige. Vi kommer til å ta oss tid til repetisjon av det som er uklart. Det er derfor viktig at jeg får vite hva dere synes er lett og hva som er vanskelig. Hvis det er behov for det kan vi kanskje sette av tid til å gå over noe av det grunnleggende på nytt. Følg med på gruppesiden for info om hva jeg planlegger å ta opp hver time.
+Gi likevel beskjed om hva som er vanskelig; snakk med meg, send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
 
-Noen begreper:
+Denne uken er oppgavene litt vanskeligere. Ikke få panikk. Jeg venter ikke at dere nødvendigvis klarer å løse dem. Men ta en titt likevel; og løs gjerne oppgaver fra de forrige to ukene helt til du føler deg stødig nok til å se nærmere på disse.
+
+Altså: Ikke få panikk; løs heller oppgaver far de siste to ukene.
+
+Noen begreper denne uken:
 
 **Buffer:** et *mellomlager* for informasjon. Brukes for eksempel når vi leser fra en fil, for å oppbevare dataene frem til vi gjør noe med dem.
 
@@ -22,7 +26,7 @@ Noen begreper:
 
 #### 1:
 
-Programmet `gull` trenger å lese en fil linje for linje, og ta vare på hver linje i en cstring. Vi skal derfor skrive funksjonen `File_get_line(FILE* file, int maxlen)`, som leser en linje fra filen, og returnerer en `char *` til linjen. Funksjonen skal:
+Programmet `gull` skal utvides, og vi trenger i den forbindelse å lese en fil linje for linje, slik at hver linje oppbevares for seg (en cstring for hver). Vi skal derfor skrive funksjonen `File_get_line(FILE* file, int maxlen)`, som leser en linje fra en åpnet fildeskriptor, og returnerer en `char *` til linjen som ble lest. Funksjonen skal:
 
 - allokere en buffer med størrelse `maxlen + 1`
 - lese en linje fra filen til bufferen
@@ -30,19 +34,20 @@ Programmet `gull` trenger å lese en fil linje for linje, og ta vare på hver li
 - kopiere linjen fra bufferen til det allokerte området (se `man strcpy`)
 - deallokere bufferen
 - returnere en peker til den allokerte linjen.
-
-Hvis det ikke er flere linjer igjen å lese, skal funksjonen returnere `NULL`.
+- returnere `NULL` hvis det ikke er flere linjer igjen å lese
 
 Ekstraspørsmål: Hvorfor allokerer vi bufferen til `maxlen + 1` og ikke bare `maxlen`?
 
 
 #### 2:
 
-Implementer en av datastrukturene som ble beskrevet på forelesningen; kø, stakk eller lenket liste. Finn passende funksjonsnavn (ta hensyn til at navnene er globale), og deklarer funksjonene i en header-fil, slik at forskjellige programmer kan inkludere og bruke datastrukturen. Bruk strukter og pekere, slik vi snakket om i timen. Skriv et program som tester at alt fungerer som forventet. Lag funksjoner som kan lese og skrive datastrukturen til og fra disk hvis den for eksempel inneholder cstrings.
+Implementer en av datastrukturene som ble beskrevet på forelesningen; kø, stakk eller lenket liste. Finn passende funksjonsnavn (ta hensyn til at navn i C er globale), og deklarer funksjonene i en header-fil, slik at forskjellige programmer kan inkludere og bruke datastrukturen. Skriv funksjoner som arbeider med pekere til strukter, slik vi snakket om i timen. Skriv et program som tester at alt fungerer som forventet. Lag funksjoner som kan lese og skrive datastrukturen til og fra disk hvis den for eksempel inneholder cstrings.
 
-Ikke få panikk hvis dette høres vanskelig ut. Arbeid heller med de andre oppgavene litt lenger. Det er mange nye begreper å forholde seg til i begynnelsen, men det faller på plass etterhvert. Prøv å danne overblikk, og løs ett steg om gangen. Man kan få verdifull trening av å jobbe med denne typen oppgave, der man må gjøre mange overveielser.
+NB: Denne oppgaven er relativt vanskelig. Den kombinerer det meste vi har arbeidet med til nå, og gir rom for mange egne valg. Jeg har tatt den med som en prøvesmak på noe litt mer omfattende, som det også kan være gøy å bryne seg på.
 
-Som eksempel kommer jeg til å løse denne oppgaven med en kø (ringbuffer) i neste gruppetime. Dette er funksjonene jeg kommer til å implementere:
+Det er mange nye begreper å forholde seg til i begynnelsen, men det faller på plass etterhvert. Prøv å danne overblikk, og løs ett steg om gangen. Det er god trening i å jobbe med denne typen oppgave, der man må gjøre mange overveielser.
+
+Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da implementere en kø (i form av en ringbuffer). Ringbuffere skal ha blitt nevnt på forelesning. Dette er funksjonene jeg planlegger å implementere:
 
     TODO
 

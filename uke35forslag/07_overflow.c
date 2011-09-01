@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-/* A short int is 2 bytes. That means 16 bits.
+/* A short int is 2 bytes == 16 bits.
  * Being signed, it has the range
  * -32,768 -> +32,767
  *
