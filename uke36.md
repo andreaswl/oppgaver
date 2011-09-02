@@ -57,7 +57,7 @@ Sørg for å lukke fildeskriptoren før programmet avsluttes, og håndter eventu
 
 #### 5:
 
-Skriv funksjonen `chop_string`, som tar en cstring som parameter, reduserer lengden dens til omtrent halvparten, og returnerer en `char *` til den siste halvdelen, som ble “kappet av”. Det er ikke nødvendig å allokere minne.
+Skriv funksjonen `chop_string`, som tar en cstring som parameter, reduserer lengden dens til omtrent halvparten, og returnerer en `char *` til den siste halvdelen, som ble “kappet av”. Det er ikke nødvendig å allokere minne. Velg selv hvordan du vil håndtere korte strenger.
 
 
 #### 6:
