@@ -9,7 +9,7 @@ Noen begreper denne uken:
 
 **Objektfil:** C-kode kan kompileres til objektfiler, som senere kan *lenkes* sammen med andre objektfiler, og sammen danne en kjørbar programfil. Dette gjør det for eksempel mulig å lenke mot *biblioteker* som allerede er kompilert på maskinen.
 
-**Fildeskriptor:** En måte å håndtere arbeid med filer på i C-programmer. For å få tilgang til en fil kaller vi
+**Fildeskriptor:** En måte å håndtere arbeid med filer på i C-programmer. Vi kan for eksempel kalle funksjonen `fopen()` med banen til en fil for å få returnert en fildeskriptor, som vi deretter kan bruke for å lese fra eller skrive til filen.
 
 
 ### Oppgaveforslag uke 36:
