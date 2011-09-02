@@ -57,7 +57,17 @@ Sørg for å lukke fildeskriptoren før programmet avsluttes, og håndter eventu
 
 #### 5:
 
-Skriv funksjonen `chop_string`, som tar en cstring som parameter, reduserer lengden dens til omtrent halvparten, og returnerer en `char *` til den siste halvdelen, som ble “kappet av”. Det er ikke nødvendig å allokere minne. Velg selv hvordan du vil håndtere korte strenger.
+(Endret 2. sep. Den gamle oppgaven med "chop_string" er fjernet.)
+
+Skriv noen programmer for å utforske forskjellige sider av C:
+
+a) Prøv å skrive ut minneadressene til noen variabler til terminalen.
+
+b) Prøv å bruke norske bokstaver i et program. Hvor lang er en streng med norske bokstaver hvis vi sjekker den med `strlen()` fra `string.h`?
+
+c) Deklarer en array uten å sette noen av verdiene. Prøv å skrive ut noen av elementene likevel, og se om de har verdier allerede. Prøv det samme med `malloc`.
+
+d) Skriv et program som går i evig løkke, og skriver ut tallverdien av hvert tegn brukeren skriver inn i terminalen.
 
 
 #### 6:
