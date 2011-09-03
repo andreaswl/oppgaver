@@ -89,6 +89,16 @@ void Registry_inspect(registry_t* registry)
     }
 }
 
+void Registry_free_all(registry_t* registry)
+{
+    int i;
+    for (i = 0; i < registry->size; i++) {
+        Person_free(registry->people[i]);
+    }
+    free(registry->people);
+    free(registry);
+}
+
 
 
 int main(int argc, const char *argv[])
@@ -96,13 +106,15 @@ int main(int argc, const char *argv[])
     registry_t *registry;
     registry = Registry_new(REGISTRY_MAX);
 
-
     Registry_add(registry, Person_new("Gunnar", 40));
     Registry_add(registry, Person_new("Lene",   28));
     Registry_add(registry, Person_new("Rui",    21));
     Registry_add(registry, Person_new("Eva",    61));
     
     Registry_inspect(registry);
+
+    Registry_free_all(registry);
+
     return 0;
 }
 

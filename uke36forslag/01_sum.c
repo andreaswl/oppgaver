@@ -5,7 +5,7 @@
  * which will abort the program with an
  * error message if the parameter is not true.
  * This can be used to write tests to see
- * that everything is working as expected.
+ * that everything works as expected.
  *
  */
 
@@ -24,3 +24,13 @@ int main()
 	return 0;
 }
 
+
+/* Some areas where pointers can be useful:
+ *
+ * - functions "returning" multiple values
+ * - functions operating on large input data
+ * - speed (giving someone an address is sometimes
+ *   quicker than building them a copy of the house)
+ * - implementing a kind of object orientation
+ *   (see last exercise this week).
+ */
