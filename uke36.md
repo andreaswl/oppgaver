@@ -3,7 +3,7 @@ Hovedtemaene denne uken blir minne, pekere, headere, cstrings, Make-filer, og hv
 
 Noen begreper denne uken:
 
-**Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header-fil vi inkluderer fra standardbiblioteket. Det finnes også en annen type include: `#include "person.h"`. Her er `person.h` en headerfil i samme mappe som filen selv, altså gjerne en fil vi gjerne har skrevet selv.
+**Header:** En fil vi kan inkludere for å få tilgang til funksjoner, makroer etc. Når vi skriver `#include <stdio.h>` er `stdio.h` en header-fil vi inkluderer fra standardbiblioteket. Det finnes også en annen type include: `#include "person.h"`. Her er `person.h` en headerfil i samme mappe som filen selv, altså gjerne en fil vi har skrevet selv.
 
 **Peker:** Grovt og enkelt kan vi si at en peker er en minneadresse, som "peker" på en eller flere verdier, et eller annet sted i minne. Pekere står sentralt i C, og blir grundig gjennomgått i plenumsgruppen.
 
@@ -65,7 +65,7 @@ a) Prøv å skrive ut minneadressene til noen variabler til terminalen.
 
 b) Prøv å bruke norske bokstaver i et program. Hvor lang er en streng med norske bokstaver hvis vi sjekker den med `strlen()` fra `string.h`?
 
-c) Deklarer en array uten å sette noen av verdiene. Prøv å skrive ut noen av elementene likevel, og se om de har verdier allerede. Prøv det samme med `malloc`.
+c) Deklarer en array uten å sette noen av verdiene. Prøv å skrive ut noen av elementene likevel, og se om de har verdier allerede. Prøv det samme med `malloc()` fra `stdlib.h`.
 
 d) Skriv et program som går i evig løkke, og skriver ut tallverdien av hvert tegn brukeren skriver inn i terminalen.
 
@@ -98,23 +98,23 @@ Vi skal nå prøve å skrive mer objektorientert kode i C. Eksempelet vi tar utg
 C har ingen støtte for klasser eller objekter i samme forstand som Java eller Python, så objektorienteringen må gjøres på en litt annen måte. Vi kan for eksempel allokere minne for en person-strukt, og gi pekeren til funksjoner som bearbeider strukten på forskjellige måter.
 
 A)
-Skriv strukten `person_s` (med navn og alder, som angitt), på denne formen:
+Skriv strukten `person_t` (med navn og alder, som angitt), på denne formen:
 
     typedef struct {
     ...
-    } person_s;
+    } person_t;
 
 B)
-Skriv funksjonen `person_s* Person_new(char* name, short age)`, som allokerer minne for en person, skriver verdiene, og returnerer en peker til personen.
+Skriv funksjonen `person_t* Person_new(char* name, short age)`, som allokerer minne for en person, skriver verdiene, og returnerer en peker til personen.
 
 C)
-Skriv funksjonen `void Person_birthday(person_s* person)` som gjør en person et år eldre.
+Skriv funksjonen `void Person_birthday(person_t* person)` som gjør en person et år eldre.
 
 D)
-Skriv funksjonen `void Person_inspect(person_s* person)` som skriver ut en person i terminalen med navn og alder.
+Skriv funksjonen `void Person_inspect(person_t* person)` som skriver ut en person i terminalen med navn og alder.
 
 E)
-Skriv funksjonen `void Person_free(person_s* person)` som frigir minnet som ble brukt av personen.
+Skriv funksjonen `void Person_free(person_t* person)` som frigir minnet som ble brukt av personen.
 
 F)
 Skriv et testprogram for å se at funksjonene du har skrevet fungerer.
