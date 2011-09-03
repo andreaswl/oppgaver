@@ -1,6 +1,7 @@
 
 
-(Intro)
+Denne uken planlegger jeg å snakke om vanlige feil; i C generelt, og i innleveringene.
+
 
 **Begrep:** forklaring
 
@@ -9,6 +10,9 @@
 ### Oppgaver uke 40:
 
 
+#### 0:
+
+Hva slags feil dukker opp mest når du koder i C? Hvorfor? Hvordan går du frem for å forstå og rette feilene? Det blir mer snakk om dette i timen -- ta gjerne med spørsmål til timen.
 
 
 #### 1:

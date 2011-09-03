@@ -1,12 +1,19 @@
 
+Obligen nærmer seg, og jeg planlegger derfor å bruke første halvdel av timen som kommer til spørsmål og svar. Jeg legger også ut noen litt mer krevende oppgaver, som jeg planlegger å snakke om i andre halvdel.
 
-Denne uken blir det mer arbeid med pekere og objektorientering. Vi ser også nærmere på datastrukturer, minnefeil, debugging og filer. I løpet av disse tre første ukene skal vi ha dekket de viktigste områdene av C. Det er mye stoff -- og det er helt naturlig om man ikke henger helt med. De fleste av temaene vil bli tatt opp igjen senere.
+Det blir altså få, men mer krevende oppgaver denne uken. Det har vært mye stoff, og jeg tror de fleste kan ha glede av å arbeide mer med oppgavene fra de første to ukene. Særlig oppgave to denne uken forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av flere temaer. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver, hvis det er nødvendig. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere stoffet fra de siste ukene.
 
-Gi likevel beskjed om hva som er vanskelig; snakk med meg, send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
+Her er likevel noen ting jeg synes det er litt viktig at alle begynner å forstå, for å henge med:
 
-Denne uken er oppgavene litt vanskeligere. Ikke få panikk. Jeg venter ikke at dere nødvendigvis klarer å løse dem. Men ta en titt likevel; og løs gjerne oppgaver fra de forrige to ukene helt til du føler deg stødig nok til å se nærmere på disse.
+- pekere
+- arrays
+- strukter
+- objektfiler
+- headere
+- Makefiles (gjør livet enklere)
+- fildeskriptorer
 
-Altså: Ikke få panikk; løs heller oppgaver far de siste to ukene.
+Si gjerne i fra til meg om hva som kan trenge repetisjon. Jeg setter av tid når jeg vet at noen har glede av det. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
 
 Noen begreper denne uken:
 
@@ -14,7 +21,7 @@ Noen begreper denne uken:
 
 **Fifo:** First in, first out. Samme som kø.
 
-**Lifo:** Last in, first out. Samme som "stakk". "Stakk" brukes også ofte om call-stack. Dette blir det mere snakk om.
+**Lifo:** Last in, first out. Samme som "stakk". "Stakk" brukes også ofte om call-stack.
 
 **Heap:** Minnet som allokeres med `malloc` befinner seg i programmets heap. Detaljert info kommer på forelesning.
 
@@ -26,34 +33,44 @@ Noen begreper denne uken:
 
 #### 1:
 
-Programmet `gull` skal utvides, og vi trenger i den forbindelse å lese en fil linje for linje, slik at hver linje oppbevares for seg (en cstring for hver). Vi skal derfor skrive funksjonen `File_get_line(FILE* file, int maxlen)`, som leser en linje fra en åpnet fildeskriptor, og returnerer en `char *` til linjen som ble lest. Funksjonen skal:
+Programmet `gull` skal utvides, og vi trenger i den forbindelse å lese en fil linje for linje, slik at hver linje oppbevares hver for seg (en cstring for hver). Vi skal derfor skrive funksjonen `File_get_line(FILE* file, int maxlen)`, som leser en linje fra en åpen fildeskriptor, og returnerer en `char *` til linjen som ble lest. Funksjonen skal:
 
 - allokere en buffer med størrelse `maxlen + 1`
-- lese en linje fra filen til bufferen
-- allokere nok minne til å oppbevare linjen
+- lese en linje fra filen, til bufferen (se `man 3 getline`)
+- allokere nok minne til å oppbevare linjen (bruk `malloc()`)
 - kopiere linjen fra bufferen til det allokerte området (se `man strcpy`)
-- deallokere bufferen
-- returnere en peker til den allokerte linjen.
-- returnere `NULL` hvis det ikke er flere linjer igjen å lese
+- deallokere bufferen (bruk `free()`)
+- returnere `char`-pekeren (`char*`) til den allokerte linjen
+- returnere `NULL` hvis det ikke er flere linjer igjen å lese.
 
-Ekstraspørsmål: Hvorfor allokerer vi bufferen til `maxlen + 1` og ikke bare `maxlen`?
+Ekstraspørsmål: Hvorfor allokerer vi bufferen med størrelse `maxlen + 1` og ikke bare `maxlen`?
 
 
 #### 2:
 
-Implementer en av datastrukturene som ble beskrevet på forelesningen; kø, stakk eller lenket liste. Finn passende funksjonsnavn (ta hensyn til at navn i C er globale), og deklarer funksjonene i en header-fil, slik at forskjellige programmer kan inkludere og bruke datastrukturen. Skriv funksjoner som arbeider med pekere til strukter, slik vi snakket om i timen. Skriv et program som tester at alt fungerer som forventet. Lag funksjoner som kan lese og skrive datastrukturen til og fra disk hvis den for eksempel inneholder cstrings.
+Implementer en av datastrukturene som ble beskrevet på forelesningen; kø, stakk eller lenket liste. Finn passende funksjonsnavn (ta hensyn til at navn i C er globale), og deklarer funksjonene i en header-fil, slik at forskjellige programmer kan inkludere og bruke datastrukturen. Det kan lønne seg å bruke objektorientert kodestil (se [løsningsforslag for siste oppgave, uke 36](https://github.com/INF1060H11/oppgaver/blob/master/uke36forslag/07_object_orientation.c) for et eksempel).
 
-NB: Denne oppgaven er relativt vanskelig. Den kombinerer det meste vi har arbeidet med til nå, og gir rom for mange egne valg. Jeg har tatt den med som en prøvesmak på noe litt mer omfattende, som det også kan være gøy å bryne seg på.
+Skriv et program som tester at alt fungerer som forventet. Lag funksjoner som kan lese og skrive datastrukturen til og fra disk hvis den for eksempel inneholder cstrings.
 
-Det er mange nye begreper å forholde seg til i begynnelsen, men det faller på plass etterhvert. Prøv å danne overblikk, og løs ett steg om gangen. Det er god trening i å jobbe med denne typen oppgave, der man må gjøre mange overveielser.
+Merk:
 
-Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da implementere en kø (i form av en ringbuffer). Ringbuffere skal ha blitt nevnt på forelesning. Dette er funksjonene jeg planlegger å implementere:
+Denne oppgaven kombinerer det meste vi har arbeidet med til nå, og gir rom for mange egne valg. Den kan være ganske vanskelig, og _må_ ikke løses. Den er med som en prøvesmak og utfordring.
 
-    TODO
+Det er mange nye begreper å forholde seg til i begynnelsen, men det faller på plass etterhvert. Prøv å danne overblikk, og ta ett steg om gangen. Det ligger god trening i å jobbe med denne typen oppgave, der man må gjøre mange overveielser, og tenke strukturert.
+
+Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da implementere en kø (i form av et ringbuffer). Ringbuffere skal ha blitt nevnt på forelesning. Dette er funksjonene jeg planlegger å implementere for ringbufferet:
+
+    rbuf_t*   Rbuf_new(int);
+    void      Rbuf_free(rbuf_t*);
+    void      Rbuf_put(rbuf_t*, void*);
+    void*     Rbuf_get(rbuf_t*);
+    void*     Rbuf_peek(rbuf_t*, int);
+    void*     Rbuf_random(rbuf_t*);
 
 Jeg følger her den objektorienterte stilen fra sist uke, med funksjoner som arbeider med strukt-pekere.
 
-Hvis du vil at datastrukturen skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man la elementene være void-pekere. Da bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
+Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer.
 
-Send gjerne inn spørsmål via gruppesiden.
+Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
+
 

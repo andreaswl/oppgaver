@@ -1,8 +1,10 @@
 
 
+Temaer denne uken er disker og filsystemer.
+
 (Intro)
 
-**Begrep:** forklaring
+**Systemkall:** funksjoner som tilbys av operativsystemet overfor programmer (programmerere) for å utføre nyttige oppgaver; f.eks `fopen()` eller `fork()`, som programmet ellers ikke hadde hatt tilgang til.
 
 
 

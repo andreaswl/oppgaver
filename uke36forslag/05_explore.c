@@ -24,6 +24,7 @@ int main(int argc, const char *argv[])
     
     printf("Norwegian letter: %s\n", aring);
     printf("Length of Norwegian letter: %d\n", strlen(aring));
+    printf("Address of Norwegian letter: %u\n", (unsigned int) aring);
 
     printf("Enter some characters, enter to send, ctrl-c to exit.\n");
     while((input = getchar()) != EOF)
