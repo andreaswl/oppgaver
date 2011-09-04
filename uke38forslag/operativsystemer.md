@@ -12,7 +12,7 @@ Noen momenter kan være:
 - Fordeling av ressurser (CPU, minne og enheter)
 - Tilbyr funksjoner mange programmer kan ha nytte av, så de slipper å lage disse selv
 
-Oppgaven var ment som noe man kan tenke over. Kort sagt - OS gir oss en
+Oppgaven var ment som noe man kan tenke over. OS gir oss kort fortalt en
 rimelig enkel abstraksjon over hardware (som gjør at vi ikke trenger å
 bry oss om hvordan HW fungerer på lavt nivå når vi programmerer). I
 tilegg fordeler den resurser som CPU og minne til forskjellige brukere
@@ -32,11 +32,13 @@ OS-et fra disken og inn i minne, og deretter kjøre det. Dermed tar OS-et over o
 #### 13:
 
 Brukernivå:
+
 - Alle vanlige programmer kjøres på dette nivået
 - Beskyttet minne (en prosess ser ikke minnet brukt av andre prosesser)
 - Ingen adgang til hardware uten å bruke OSets funksjoner (system call)
 
 Kernelnivå:
+
 - Bare de programmene man kan virkelig stole på (deler av OSet) kan
   kjøre her.
 - Programmene kan gjøre hva de vil med hele minneområdet (til og med
@@ -49,25 +51,27 @@ pekeren som ble sendt som argument til kallet, og deretter returnere,
 nå i brukernivå, til det programmet som kalte på funksjonen.
   
   
-Oppgave 4
------------------------------------------------------------------------
+#### 14:
+
 Monolitiske kjerner:
-+ raske
-- vanskelig å vedlikeholde, kan føre til at de blir ustabile, og ikke
-  nødvendigvis så raske
+
+    + raske
+    - vanskelig å vedlikeholde, kan føre til at de blir ustabile, og ikke
+      nødvendigvis så raske
   
-Mikro-kernele:
-+ lettere å vedlikeholde og utvide
-- tregere?
+Mikro-kernel:
+
+    + lettere å vedlikeholde og utvide
+    - tregere?
 
 
-Oppgave 5
------------------------------------------------------------------------
+#### 15:
+
 Interrupt er en signal om at noe "uventet" hendte. Uventet vil her bety
 at det ikke var forventet akkurat da - man kan forvente at lesingen fra
 harddisken blir etterhvert ferdig, men man vet ikke 100% presist når 
 det skjer. Interrupt blir i den sammenhengen et tegn til resten av
-datamaskinen at noe skjedde og at det kan kreve at OSet gjør noe med 
+datamaskinen om at noe skjedde og at det kan kreve at OSet gjør noe med 
 det.
 
 Når et interrupt opprettes, enten av hardware eller software, så vil 

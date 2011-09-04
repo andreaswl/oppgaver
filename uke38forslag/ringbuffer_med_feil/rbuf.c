@@ -10,7 +10,7 @@ rbuf_t *Rbuf_new(int capacity)
     rbuf->size      = 0;
     rbuf->put_pos   = 0;
     rbuf->get_pos   = 0;
-    rbuf->arr       = malloc(sizeof(void *) * capacity);
+    rbuf->arr       = malloc(sizeof(void *) * capacity - 1);
 }
 
 void Rbuf_free(rbuf_t *rbuf)

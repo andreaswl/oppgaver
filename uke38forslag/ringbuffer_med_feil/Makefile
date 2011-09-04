@@ -5,9 +5,9 @@ CFLAGS	= -g -DDEBUG
 LD		= gcc
 LDFLAGS	=
 
-SRC 	= gem.c cli.c rbuf.c rbuftest.c
+SRC 	= rbuf.c rbuftest.c
 OBJ		= ${SRC:.c=.o}
-EXE 	= cli rbuftest
+EXE 	= rbuftest
 
 
 .SUFFIXES: .o .c
@@ -16,8 +16,7 @@ EXE 	= cli rbuftest
 		$(CC) $(CFLAGS) -c -o $@ $<
 
 
-all: $(EXE) gem.o
-cli: gem.o
+all: $(EXE)
 rbuftest: rbuf.o
 clean:
 		rm -f $(OBJ) $(EXE)

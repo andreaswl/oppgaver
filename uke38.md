@@ -27,9 +27,7 @@ Bruk `gdb`, `ddd` eller `valgrind` for å se om du kan finne ut hvorfor. Valgrin
 
 #### 2:
 
-[Ringbufferen vi skrev sist uke](.) har fungert strålende så langt. Jeg lånte bort floppydisken med programkoden til fetter Sernæs Pærnes over helga -- han skulle "legge til noen fete greier", men når jeg fikk floppydisken tilbake, var programmet tilsynelatende uendret. Programmet virker altså fortsatt, men jeg mistenker at fetter Pærnes har ødelagt noe.
-
-Her er en lenke til [koden jeg fikk tilbake fra fetter Pærnes](.)
+[Ringbufferen vi skrev sist uke](https://github.com/INF1060H11/oppgaver/tree/master/uke37forslag) har fungert strålende så langt. Jeg lånte bort floppydisken med programkode til fetter Sernæs Pærnes over helga -- han skulle "legge til noen fete greier", men når jeg fikk floppydisken tilbake, var programmet tilsynelatende uendret. Programmet virker altså fortsatt, men jeg mistenker at fetter Pærnes har ødelagt noe. Her er [koden jeg fikk tilbake fra fetter Pærnes](.)
 
 Bruk programmet `valgrind` for å se om det har dukket opp noen minnefeil siden sist, og rett eventuelle feil.
 
@@ -62,7 +60,7 @@ Denne makroen kan brukes på samme måte som `printf()`:
 
     DLOG("Entering node number %d.\n", node_number);
 
-Fordelen er at den bare blir med hvis programmet kompileres med opsjonen:
+Fordelen er at meldingene bare blir med når programmet kompileres med opsjonen:
 
     gcc -DDEBUG
 
