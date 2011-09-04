@@ -10,8 +10,8 @@ int main(int argc, const char *argv[])
 {
     char  mem[10];
     unsigned char input;
-    char* aring = "å";
-    char* allocated = malloc(sizeof(char)*10);
+    char *aring = "å";
+    char *allocated = malloc(sizeof(char)*10);
 
     mem[9]        = '\0';
     allocated[9]  = '\0';

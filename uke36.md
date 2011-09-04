@@ -107,23 +107,23 @@ Skriv strukten `person_t` (med navn og alder, som angitt), på denne formen:
     } person_t;
 
 B)
-Skriv funksjonen `person_t* Person_new(char* name, short age)`, som allokerer minne for en person, skriver verdiene, og returnerer en peker til personen.
+Skriv funksjonen `person_t *Person_new(char *name, short age)`, som allokerer minne for en person, skriver verdiene, og returnerer en peker til personen.
 
 C)
-Skriv funksjonen `void Person_birthday(person_t* person)` som gjør en person et år eldre.
+Skriv funksjonen `void Person_birthday(person_t *person)` som gjør en person et år eldre.
 
 D)
-Skriv funksjonen `void Person_inspect(person_t* person)` som skriver ut en person i terminalen med navn og alder.
+Skriv funksjonen `void Person_inspect(person_t *person)` som skriver ut en person i terminalen med navn og alder.
 
 E)
-Skriv funksjonen `void Person_free(person_t* person)` som frigir minnet som ble brukt av personen.
+Skriv funksjonen `void Person_free(person_t *person)` som frigir minnet som ble brukt av personen.
 
 F)
 Skriv et testprogram for å se at funksjonene du har skrevet fungerer.
 
 G)
 Hva synes du om funksjons-navnene som er foreslått her?
-
+ 
 H)
 Hvordan kan vi håndtere eventuelle feil som oppstår i disse funksjonene? Implementer feilhåndtering hvis du har lyst.
 

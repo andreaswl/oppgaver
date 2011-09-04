@@ -33,9 +33,9 @@ typedef struct {
 
 /* Person */
 
-person_t* Person_new(char* name, short age)
+person_t *Person_new(char *name, short age)
 {
-    person_t* person;
+    person_t *person;
     
     person = malloc(sizeof(person_t));
     person->name = name;
@@ -43,17 +43,17 @@ person_t* Person_new(char* name, short age)
     return person;
 }
 
-void Person_birthday(person_t* person)
+void Person_birthday(person_t *person)
 {
     person->age++;
 }
 
-void Person_inspect(person_t* person)
+void Person_inspect(person_t *person)
 {
     printf("%s (%d)\n", person->name, person->age);
 }
 
-void Person_free(person_t* person)
+void Person_free(person_t *person)
 {
     free(person);
 }
@@ -61,9 +61,9 @@ void Person_free(person_t* person)
 
 /* Registry: */
 
-registry_t* Registry_new(int maxsize)
+registry_t *Registry_new(int maxsize)
 {
-    registry_t* registry;
+    registry_t *registry;
     registry = malloc(sizeof(registry_t));
     registry->maxsize = maxsize;
     registry->size = 0;
@@ -71,7 +71,7 @@ registry_t* Registry_new(int maxsize)
     return registry;
 }
 
-int Registry_add(registry_t* registry, person_t* person)
+int Registry_add(registry_t *registry, person_t *person)
 {
     if (registry->size < registry->maxsize) {
         registry->people[registry->size++] = person;
@@ -81,7 +81,7 @@ int Registry_add(registry_t* registry, person_t* person)
     }
 }
 
-void Registry_inspect(registry_t* registry)
+void Registry_inspect(registry_t *registry)
 {
     int i;
     for (i = 0; i < registry->size; i++) {
@@ -89,7 +89,7 @@ void Registry_inspect(registry_t* registry)
     }
 }
 
-void Registry_free_all(registry_t* registry)
+void Registry_free_all(registry_t *registry)
 {
     int i;
     for (i = 0; i < registry->size; i++) {

@@ -1,9 +1,9 @@
 
-Hei alle sammen; håper det gikk bra med obligen. I plenumsgruppen denne uken skal jeg fortelle mer om debugging og minnefeil. Jeg legger også ved de teoretiske oppgavene fra tidligere semestre.
+I plenumsgruppen denne uken har jeg tenkt å fortelle mer om debugging og minnefeil. Jeg legger også ved de teoretiske oppgavene fra tidligere semestre.
 
 Begreper:
 
-**segfault:** Segmentation fault; en feil som oppstår når vi prøver å arbeide med minneadresser vi egentlig ikke har noe med. Dukker gjerne opp i forbindelse med pekere.
+**segfault:** Segmentation fault; en feil som oppstår når vi prøver å lese eller modifisere minnet på en måte som ikke er tillatt. Dukker gjerne opp i forbindelse med pekere.
 
 
 ### Oppgaver uke 38:
