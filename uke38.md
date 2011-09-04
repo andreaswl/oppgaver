@@ -27,7 +27,7 @@ Bruk `gdb`, `ddd` eller `valgrind` for å se om du kan finne ut hvorfor. Valgrin
 
 #### 2:
 
-[Ringbufferen vi skrev sist uke](https://github.com/INF1060H11/oppgaver/tree/master/uke37forslag) har fungert strålende så langt. Jeg lånte bort floppydisken med programkode til fetter Sernæs Pærnes over helga -- han skulle "legge til noen fete greier", men når jeg fikk floppydisken tilbake, var programmet tilsynelatende uendret. Programmet virker altså fortsatt, men jeg mistenker at fetter Pærnes har ødelagt noe. Her er [koden jeg fikk tilbake fra fetter Pærnes](.)
+[Ringbufferen vi skrev sist uke](https://github.com/INF1060H11/oppgaver/tree/master/uke37forslag) har fungert strålende så langt. Jeg lånte bort floppydisken med programkode til fetter Sernæs Pærnes over helga -- han skulle "legge til noen fete greier", men når jeg fikk floppydisken tilbake, var programmet tilsynelatende uendret. Programmet virker altså fortsatt, men jeg mistenker at fetter Pærnes har ødelagt noe. Her er [koden jeg fikk tilbake fra fetter Pærnes](https://github.com/INF1060H11/oppgaver/tree/master/uke38forslag/ringbuffer_med_feil)
 
 Bruk programmet `valgrind` for å se om det har dukket opp noen minnefeil siden sist, og rett eventuelle feil.
 
