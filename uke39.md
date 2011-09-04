@@ -6,7 +6,7 @@ Jeg kommer til å arbeide med denne oppgaven i gruppetimen hvis det blir tid. De
 
 Oppdater programmet `gull` som fikk debugging-støtte [sist uke](https://github.com/INF1060H11/oppgaver/tree/master/uke38forslag/gull):
 
-- Bruk ringbufferet vi lagde i uke 37 for å lagre gullkornene (`rbuf.h`; allerede inkludert)
+- Bruk ringbufferet vi lagde i uke 37 for å lagre gullkornene (`rbuf.h`; ligger allerede i mappen)
 - Lag et nytt menyvalg der brukerne av programmet kan legge til sine egne gullkorn
 - Se til at programmet bruker minne på en fornuftig måte med `valgrind` eller et annet verktøy.
 
