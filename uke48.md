@@ -1,8 +1,7 @@
 
 
-(Intro)
+(Kommer)
 
-**Begrep:** forklaring
 
 
 
