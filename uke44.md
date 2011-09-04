@@ -1,8 +1,8 @@
 
 
-(Intro)
 
-**Begrep:** forklaring
+Denne uken skal vi se på litt mer avanserte servere, som kan håndtere flere forbindelser samtidig. Vi tar for oss skillet mellom `fork`- og `select`-baserte servere, og ser nærmere på noen eksempler.
+
 
 
 

@@ -1,6 +1,6 @@
 
 
-(Intro)
+(Kommer)
 
 **Begrep:** forklaring
 

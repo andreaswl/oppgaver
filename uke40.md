@@ -1,9 +1,6 @@
 
 
-Denne uken planlegger jeg å snakke om vanlige feil; i C generelt, og i innleveringene.
-
-
-**Begrep:** forklaring
+Denne uken planlegger jeg å snakke om vanlige feil; i C generelt, og i innleveringene. Jeg skal gå gjennom minst ni forkjellige mulige "slurvefeil" som kan føre til at man får "segmentation fault".  Det blir også snakk om syntaksfeil, logiske feil, og feilsøking.
 
 
 
@@ -12,7 +9,7 @@ Denne uken planlegger jeg å snakke om vanlige feil; i C generelt, og i innlever
 
 #### 0:
 
-Hva slags feil dukker opp mest når du koder i C? Hvorfor? Hvordan går du frem for å forstå og rette feilene? Det blir mer snakk om dette i timen -- ta gjerne med spørsmål til timen.
+Hva slags feil dukker opp mest når du koder i C? Hvorfor? Hvordan går du frem for å forstå og rette feilene? Det blir mer snakk om dette i timen -- ta gjerne med spørsmål.
 
 
 #### 1:
@@ -65,8 +62,8 @@ algoritmen for å bestemme hvilken side som skal ut når en ny side skal inn.
 
 1. Hvor mange page faults vil oppstå forutsatt at ingen sider var
    i minnet ved oppstart?
-2. Hvor mange page faults oppstår hvis systemet bruker LRU (Â«Least
-   Resently UsedÂ»)?
+2. Hvor mange page faults oppstår hvis systemet bruker LRU ("Least
+   Recently Used")?
 3. LRU virker som en fin algoritme i teorien. Hvorfor er den så
    vanskelig å implementere i praksis?
 
@@ -80,7 +77,7 @@ har en pagefault hver k'te instruksjon.
 
 #### 6:
 
-En maskin med 32.bit virtuelle addresser bruker en to-nivås page
+En maskin med 32-bit virtuelle addresser bruker en to-nivås page
 table. De virtuelle addressene splittes opp i 9-bits top level page
 table felt, et 11-bits andre-nivås page table og et offsett. Hvor
 store pages er det i systemet og hvor mange pages er det i systemet?
