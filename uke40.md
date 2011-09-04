@@ -1,16 +1,20 @@
 
 
-Denne uken planlegger jeg å snakke om vanlige feil; i C generelt, og i innleveringene. Jeg skal gå gjennom minst ni forkjellige mulige "slurvefeil" som kan føre til at man får "segmentation fault".  Det blir også snakk om syntaksfeil, logiske feil, og feilsøking.
+Denne uken planlegger jeg å snakke om vanlige feil; i C generelt, og i innleveringene. Jeg skal gå gjennom minst ni forkjellige mulige "slurvefeil" med pekere som kan føre til at man får "segmentation fault".  Det blir også snakk om syntaksfeil og logiske feil, og selvfølgelig hvordan man kan løse dem.
+
+Jeg legger ved oppgaver om minne fra tidligere år.
 
 
 
 ### Oppgaver uke 40:
 
 
-#### 0:
+#### -1:
 
 Hva slags feil dukker opp mest når du koder i C? Hvorfor? Hvordan går du frem for å forstå og rette feilene? Det blir mer snakk om dette i timen -- ta gjerne med spørsmål.
 
+
+### Oppgaver om minne:
 
 #### 1:
 
@@ -31,7 +35,7 @@ fjerdedel bak i køen fra starten av. (Det er her snakk om cirka-tall.)
 1. Hvilken hensikt kan det være med en slik fordeling? Begrunn svaret
    kort.
 2. Diskuter fordeler og ulemper med implementeringen av den.
-3. Hvordan fungerer Linux' CPU scheduler?
+3. Hvordan fungerer Linux sin CPU scheduler?
 
 
 #### 3:

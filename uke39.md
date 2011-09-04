@@ -47,7 +47,7 @@ steder:
 
     if (fork() > 0) exit(0);
 
-Hva gjør denne kodebiten? Hvorfor brukes denne i ulovlige program?
+Hva gjør denne kodebiten? Hvorfor brukes den i ulovlige programmer?
 
 
 #### 7:
@@ -55,3 +55,5 @@ Hva gjør denne kodebiten? Hvorfor brukes denne i ulovlige program?
 Forklar konsekvensene av at en bruker utfører:
 
     while(1) fork();
+
+Hint: søk etter "fork bomb"
