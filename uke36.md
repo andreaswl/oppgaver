@@ -1,7 +1,5 @@
 
-Hovedtemaene denne uken blir minne, pekere, arrays, cstrings, objektfiler, headere, Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, kan det være greit å ta en titt. Jeg legger ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov.
-
-MERK: Noen av oppgavene jeg legger ut er vanskelige. Det er ikke forventet at dere får til alle sammen. Målet med oppgavene er å få trening i C. Forståelsen kommer gradvis. Vi kommer til å vende tilbake til disse temaene og oppgavene gjennom hele semesteret.
+Hovedtemaene denne uken blir minne, pekere, arrays, cstrings, objektfiler, headere, Make-filer, og hvordan man kan fordele koden over flere filer. Hvis du ikke har sett på forrige ukes oppgaver, kan det være greit å ta en titt. Jeg legger ut ganske mange oppgaver i år. Det kan derfor være lurt å bla litt frem og tilbake, og bruke tiden der du synes det er behov. Noen av oppgavene jeg legger ut er vanskelige. Det er ikke forventet at dere får til alle sammen. Målet med oppgavene er å få trening i C. Vi kommer til å vende tilbake til disse temaene og oppgavene gjennom hele semesteret.
 
 Noen begreper denne uken:
 
