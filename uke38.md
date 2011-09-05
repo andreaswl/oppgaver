@@ -1,5 +1,6 @@
 
-I plenumsgruppen denne uken har jeg tenkt å fortelle mer om debugging og minnefeil. Jeg legger også ved de teoretiske oppgavene fra tidligere semestre.
+I plenumsgruppen denne uken har jeg tenkt å fortelle mer om debugging;
+ altså hvordan man oppdager og retter feil i programmene man skriver. Jeg legger ut noen relevante oppgaver i C nedenfor. Jeg kommer også til å legge ut teoretiske oppgaver fra tidligere semestre; denne uken er temaet operativsystemer.
 
 Begreper:
 

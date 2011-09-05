@@ -1,5 +1,5 @@
 
-Obligen nærmer seg. Jeg kommer derfor til å dele timen som kommer i to:
+Obligen nærmer seg. Jeg kommer til å dele neste gruppetime i to:
 
 *Del 1:* Spørsmål og svar  
 *Del 2:* Gjennomgang av litt mer krevende oppgaver. Lage et ringbuffer.
@@ -49,7 +49,7 @@ Programmet `gull` skal utvides, og vi trenger i den forbindelse å lese en fil l
 Ekstraspørsmål:
 
 - Hvorfor allokerer vi bufferen med størrelse `maxlen + 1` og ikke bare `maxlen`?
-- Hva er fordelene og ulempene med å allokere bufferen hver gang funksjonen kalles?
+- Hva er ulempene og evt. fordelene med å allokere bufferen hver gang funksjonen kalles?
 
 
 
@@ -76,8 +76,6 @@ Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da imp
 
 Jeg følger her den objektorienterte stilen som ble beskrevet sist uke, med funksjoner som arbeider med strukt-pekere.
 
-Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer.
-
-Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
+Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer. Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
 
 
