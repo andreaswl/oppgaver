@@ -1,9 +1,14 @@
 
-Obligen nærmer seg, og jeg planlegger derfor å bruke første halvdel av timen som kommer til spørsmål og svar. Jeg legger også ut noen litt mer krevende oppgaver, som jeg planlegger å snakke om i andre halvdel.
+Obligen nærmer seg. Jeg kommer derfor til å dele timen som kommer i to:
 
-Det blir altså få, men mer krevende oppgaver denne uken. Det har vært mye stoff, og jeg tror de fleste kan ha glede av å arbeide mer med oppgavene fra de første to ukene. Særlig oppgave to denne uken forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av flere temaer. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver, hvis det er nødvendig. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere stoffet fra de siste ukene.
+*Del 1:* Spørsmål og svar
+*Del 2:* Gjennomgang av litt mer krevende oppgaver. Lage et ringbuffer.
 
-Her er likevel noen ting jeg synes det er litt viktig at alle begynner å forstå, for å henge med:
+Det blir bare to oppgaver denne uken, men de er mer krevende, og er ment som en utfordring. Særlig oppgave to forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av mange av temaene så langt. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver hvis det er vanskelig.
+
+Det har vært mye stoff, og jeg tror de fleste kan ha glede av å se mer på oppgavene fra de første to ukene. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere stoffet fra de siste ukene.
+
+Her er noen ting dere bør begynne å beherske:
 
 - pekere
 - arrays
@@ -13,7 +18,7 @@ Her er likevel noen ting jeg synes det er litt viktig at alle begynner å forst�
 - Makefiles (gjør livet enklere)
 - fildeskriptorer
 
-Si gjerne i fra til meg om hva som kan trenge repetisjon. Jeg setter av tid når jeg vet at noen har glede av det. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
+Si i fra til meg om hva som kan trenge repetisjon. Jeg setter av tid til det når jeg vet at noen har glede av det. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
 
 Noen begreper denne uken:
 

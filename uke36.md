@@ -43,7 +43,7 @@ Vi har denne kodebiten med en `for`-løkke:
 
 Hvordan kan vi endre kroppen til løkken slik at den bruker pekeroperasjoner istedenfor vanlige array-indekser (slik som `arr[i]`)?
 
-Hint: Man kan gjøre regneoperasjoner, slik som `+` med pekere, for å flytte seg fremover eller bakover i minnet. Se evt. foilene.
+Hint: Man kan gjøre regneoperasjoner, slik som `+`, med pekere, for å flytte seg fremover eller bakover i minnet. Se evt. foilene.
 
 
 #### 4:
@@ -95,7 +95,8 @@ Det ligger mye info om Make ute på nettet. [Siden om Make på Wikipedia][wpmake
 
 Vi skal nå prøve å skrive mer objektorientert kode i C. Eksempelet vi tar utgangspunkt i er et personregister. Hver person har et navn (`char *`) og en alder (`short int`). Da hadde det jo vært praktisk med person-objekter..
 
-C har ingen støtte for klasser eller objekter i samme forstand som Java eller Python, så objektorienteringen må gjøres på en litt annen måte. Vi kan for eksempel allokere minne for en person-strukt, og gi pekeren til funksjoner som bearbeider strukten på forskjellige måter.
+C har ingen støtte for klasser eller objekter i samme forstand som Java eller Python, så objektorienteringen må gjøres på en litt annen måte. Vi kan for eksempel allokere minne for en person-strukt, og gi en peker til strukten til funksjoner som arbeider med strukten på forskjellige måter.
+
 
 A)
 Skriv strukten `person_t` (med navn og alder, som angitt), på denne formen:
@@ -125,7 +126,8 @@ Hva synes du om funksjons-navnene som er foreslått her?
 H)
 Hvordan kan vi håndtere eventuelle feil som oppstår i disse funksjonene? Implementer feilhåndtering hvis du har lyst.
 
-I)
+I) Ekstra utfordring for de som har lyst:
+
 Skriv personregisteret, med en kommandolinje der man kan..
 
 - Legge til personer

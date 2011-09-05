@@ -110,6 +110,8 @@ int main(int argc, const char *argv[])
     Registry_add(registry, Person_new("Lene",   28));
     Registry_add(registry, Person_new("Rui",    21));
     Registry_add(registry, Person_new("Eva",    61));
+
+    Person_birthday(registry->people[0]);
     
     Registry_inspect(registry);
 
