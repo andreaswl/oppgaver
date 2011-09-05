@@ -1,18 +1,19 @@
 
-
-Denne uken skal vi se nærmere på kommunikasjon mellom prosesser. Hovedbegrepene er `fork()`, pipes, signaler og pid-er.
-
+Denne uken er temaet kommunikasjon mellom prosesser.
 
 **fork:** et systemkall som "splitter" kjøringen av programmet i to; en foreldreprosess og en barneprosess, med hver sin tilstand.
 
-**pid:** "process id" - et tall som identifiserer en prosess.
+**pid:** *process id* - et tall som identifiserer en prosess.
 
-**pipe:** et fildeskriptor-par som fungerer som et fifo (kø); vi kan skrive til den ene enden, og lese dataene ut igjen fra den andre enden. Pipes brukes ofte for å kommunisere mellom prosesser.
+**pipe:** et fildeskriptor-par som fungerer som en fifo (kø); vi kan skrive til den ene, og lese dataene ut igjen fra den andre. Pipes kan brukes brukes for å kommunisere mellom prosesser.
 
+**signal:** en måte å gi en beskjed til et program på. Brukes særlig til å håndtere predefinerte beskjeder for OS-et, som for eksempel "avslutt, er du snill", eller "avslutt nå!".
 
 
 ### Oppgaver uke 42:
 
+
+Ta en titt på [eksempelprogrammene](http://heim.ifi.uio.no/~inf1060/programs/) på kurssiden.
 
 
 #### 1:
@@ -26,7 +27,7 @@ Skriv et program som åpner en pipe, forker en barneprosess, sender en beskjed f
 
 #### 3:
 
-Skriv et program som forker en barneprosess som venter på et _signal_ før den skriver ut en beskjed og avslutter. Send dette signalet fra foreldreprosessen, ett sekund etter at barneprosessen ble forket ut. Log det som skjer til terminalen.
+Skriv et program som forker en barneprosess som venter på et _signal_ før den skriver ut en beskjed og avslutter. Send dette signalet fra foreldreprosessen, ett sekund etter at barneprosessen ble forket ut. Logg det som skjer til terminalen.
 
 
 

@@ -13,9 +13,10 @@
 #### 1:
 
 Kommunikasjonsformer: Gi korte definisjoner av disse begrepene:
-    a) Linje- og pakkesvitsjing.
-    b) Forbindelsesfri (datagram) og forbindelsesorientert overføring.
-    c) Hva menes med multipleksing i telenett? 
+
+1. Linje- og pakkesvitsjing.
+2. Forbindelsesfri (datagram) og forbindelsesorientert overføring.
+3. Hva menes med multipleksing i telenett? 
 
 
 #### 2:
