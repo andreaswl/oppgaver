@@ -1,7 +1,7 @@
 
 Obligen nærmer seg. Jeg kommer derfor til å dele timen som kommer i to:
 
-*Del 1:* Spørsmål og svar
+*Del 1:* Spørsmål og svar  
 *Del 2:* Gjennomgang av litt mer krevende oppgaver. Lage et ringbuffer.
 
 Det blir bare to oppgaver denne uken, men de er mer krevende, og er ment som en utfordring. Særlig oppgave to forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av mange av temaene så langt. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver hvis det er vanskelig.
