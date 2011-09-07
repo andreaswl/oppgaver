@@ -56,11 +56,7 @@ Implementer en av datastrukturene som ble beskrevet på forelesningen; kø, stak
 
 Skriv et program som tester at alt fungerer som forventet. Lag funksjoner som kan lese og skrive datastrukturen til og fra disk hvis den for eksempel inneholder cstrings.
 
-Merk:
-
-Denne oppgaven kombinerer det meste vi har arbeidet med til nå, og gir rom for mange egne valg. Den kan være ganske vanskelig, og _må_ ikke løses. Den er med som en prøvesmak og utfordring.
-
-Det er mange nye begreper å forholde seg til i begynnelsen, men det faller på plass etterhvert. Prøv å danne overblikk, og ta ett steg om gangen. Det ligger god trening i å jobbe med denne typen oppgave, der man må gjøre mange overveielser, og tenke strukturert.
+**Merk:** Denne oppgaven kombinerer det meste vi har arbeidet med til nå, og gir rom for mange egne valg. Den kan kanskje være vanskelig, og _må_ ikke løses. Den er med som en prøvesmak og utfordring.
 
 Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da implementere en kø (i form av et ringbuffer). Ringbuffere skal ha blitt nevnt på forelesning. Dette er funksjonene jeg planlegger å implementere for ringbufferet:
 
