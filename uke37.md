@@ -1,10 +1,10 @@
 
-Obligen nærmer seg. Jeg kommer til å dele neste gruppetime i to:
+Obligen nærmer seg. Jeg kommer derfor til å dele timen som kommer i to:
 
 *Del 1:* Spørsmål og svar  
 *Del 2:* Gjennomgang av litt mer krevende oppgaver. Lage et ringbuffer.
 
-Det blir bare to oppgaver denne uken, men de er mer krevende, og er ment som en utfordring. Særlig oppgave to forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av mange av temaene så langt. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver hvis det er vanskelig. Det har vært mye stoff, og jeg tror de fleste kan ha glede av å se mer på oppgavene fra de første to ukene. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere stoffet fra de siste ukene.
+Det blir bare to oppgaver denne uken, men de er litt mer krevende. Særlig oppgave to forutsetter forståelse av resten av stoffet, og fungerer som en oppsummering av mange av temaene så langt. Gå derfor gjerne tilbake, og vent litt hvis det er vanskelig. Det har vært mye stoff, og jeg tror mange kan ha glede av å se mer på oppgavene fra de første to ukene. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere der det er behov.
 
 Her er noen ting dere bør begynne å få oversikt over etterhvert:
 
@@ -16,7 +16,7 @@ Her er noen ting dere bør begynne å få oversikt over etterhvert:
 - Makefiles (gjør livet enklere)
 - fildeskriptorer
 
-Si i fra til meg om hva som kan trenge repetisjon. Jeg setter av tid til det når jeg vet at noen har glede av det. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
+Si i fra til meg om hva som kan trenge repetisjon. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
 
 Noen begreper denne uken:
 
@@ -26,10 +26,9 @@ Noen begreper denne uken:
 
 **Lifo:** Last in, first out. Samme som "stakk". "Stakk" brukes også ofte om call-stack.
 
-**Heap:** Minnet som allokeres med `malloc` befinner seg i programmets heap. Detaljert info kommer på forelesning.
+**Heap:** Minnet som allokeres med `malloc` befinner seg i programmets heap.
 
-**Ringbuffer:** en bestemt måte å lage en kø på. Vil bli gjennomgått.
-
+**Ringbuffer:** en måte å representere en kø på (se foilene).
 
 
 ### Oppgaver uke 37:
@@ -72,6 +71,6 @@ Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da imp
 
 Jeg følger her den objektorienterte stilen som ble beskrevet sist uke, med funksjoner som arbeider med strukt-pekere.
 
-Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer. Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
+Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer.
 
-
+Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
