@@ -1,9 +1,12 @@
 
-Obligen nærmer seg, og jeg planlegger derfor å bruke første halvdel av timen som kommer til spørsmål og svar. Jeg legger også ut noen litt mer krevende oppgaver, som jeg planlegger å snakke om i andre halvdel.
+Obligen nærmer seg. Jeg kommer til å dele neste gruppetime i to:
 
-Det blir altså få, men mer krevende oppgaver denne uken. Det har vært mye stoff, og jeg tror de fleste kan ha glede av å arbeide mer med oppgavene fra de første to ukene. Særlig oppgave to denne uken forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av flere temaer. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver, hvis det er nødvendig. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere stoffet fra de siste ukene.
+*Del 1:* Spørsmål og svar  
+*Del 2:* Gjennomgang av litt mer krevende oppgaver. Lage et ringbuffer.
 
-Her er likevel noen ting jeg synes det er litt viktig at alle begynner å forstå, for å henge med:
+Det blir bare to oppgaver denne uken, men de er mer krevende, og er ment som en utfordring. Særlig oppgave to forutsetter god forståelse av resten av stoffet, og fungerer som en oppsummering av mange av temaene så langt. Gå derfor gjerne tilbake, og vent litt med denne ukens oppgaver hvis det er vanskelig. Det har vært mye stoff, og jeg tror de fleste kan ha glede av å se mer på oppgavene fra de første to ukene. Det blir ikke så *veldig* mange flere gruppeoppgaver i C fremover, og det blir tid til å utdype og repetere stoffet fra de siste ukene.
+
+Her er noen ting dere bør begynne å få oversikt over etterhvert:
 
 - pekere
 - arrays
@@ -13,7 +16,7 @@ Her er likevel noen ting jeg synes det er litt viktig at alle begynner å forst�
 - Makefiles (gjør livet enklere)
 - fildeskriptorer
 
-Si gjerne i fra til meg om hva som kan trenge repetisjon. Jeg setter av tid når jeg vet at noen har glede av det. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
+Si i fra til meg om hva som kan trenge repetisjon. Jeg setter av tid til det når jeg vet at noen har glede av det. Send meg en epost (josteibe AT ifi DOT uio DOT no), eller stem via gruppesiden.
 
 Noen begreper denne uken:
 
@@ -46,7 +49,7 @@ Programmet `gull` skal utvides, og vi trenger i den forbindelse å lese en fil l
 Ekstraspørsmål:
 
 - Hvorfor allokerer vi bufferen med størrelse `maxlen + 1` og ikke bare `maxlen`?
-- Hva er fordelene og ulempene med å allokere bufferen hver gang funksjonen kalles?
+- Hva er ulempene og evt. fordelene med å allokere bufferen hver gang funksjonen kalles?
 
 
 
@@ -69,8 +72,6 @@ Jeg planlegger å se nærmere på denne oppgaven i en gruppetime. Jeg vil da imp
 
 Jeg følger her den objektorienterte stilen som ble beskrevet sist uke, med funksjoner som arbeider med strukt-pekere.
 
-Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer.
-
-Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
+Void-pekere brukes ofte for å bety pekere av en hvilken som helst type. Her bruker jeg void-pekere fordi ringbufferet kan inneholde (pekere til) en hvilken som helst type elementer. Hvis du vil at datastrukturen din skal kunne inneholde forskjellige typer elementer (som med generics i Java), kan man altså la elementene være void-pekere. Man bør man i så fall typecaste disse til pekere av rett type når man leser dem ut.
 
 

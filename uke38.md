@@ -1,5 +1,6 @@
 
-I plenumsgruppen denne uken har jeg tenkt å fortelle mer om debugging og minnefeil. Jeg legger også ved de teoretiske oppgavene fra tidligere semestre.
+I plenumsgruppen denne uken har jeg tenkt å fortelle mer om debugging;
+ altså hvordan man oppdager og retter feil i programmene man skriver. Jeg legger ut noen relevante oppgaver i C nedenfor. Jeg kommer også til å legge ut teoretiske oppgaver fra tidligere semestre; denne uken er temaet operativsystemer.
 
 Begreper:
 
@@ -36,7 +37,7 @@ Valgrind er installert på IFI sine maskiner, og kan for eksempel brukes slik:
     $ gcc rbuftest.c -g -o rbuftest
     $ valgrind ./rbuftest
 
-Valgrind viser da detaljer om hva programmet gjør med minnet underveis i kjøringen, og sier i fra hvis det skjer noe mistenkelig. Opsjonen `gcc -g` ber gcc om å ta med ekstra debugger-informasjon i det kompilerte programmet, så vi kan få mer detaljert info fra Valgrind etterpå (f.eks. bedre stack-trace med linjenummer).
+Valgrind viser da detaljer om hva programmet gjør med minnet underveis i kjøringen, og sier i fra hvis det skjer noe mistenkelig. Opsjonen `gcc -g` ber gcc om å ta med ekstra debugger-informasjon i det kompilerte programmet, så vi kan få mer detaljert info fra Valgrind etterpå (f.eks. linjenummer).
 
 #### 3:
 
@@ -44,7 +45,7 @@ I løpet av de siste ukene har vi brukt `printf()` mye. Noen av tingene vi har b
 
 - å gi brukeren beskjeder
 - å skrive ut feilmeldinger
-- å debugge (oppdage og rette feil i programmet)
+- å debugge (oppdage og rette feil i programmet, f.eks. skrive ut verdien av variabler)
 
 Etterhvert som programmet vokser, kan det bli rotete å la alle disse forskjellige typene beskjeder gå via samme "kanal". For eksempel kan det hende vi ønsker å kompilere to versjoner av programmet; en for testing, som informerer om verdien av variabler og lignende, og en for distribusjon, uten slike meldinger.
 
@@ -64,7 +65,7 @@ Fordelen er at meldingene bare blir med når programmet kompileres med opsjonen:
 
     gcc -DDEBUG
 
-Implementer et slikt logging-system i ett av dine egne programmer, eller i [gull](https://github.com/INF1060H11/oppgaver/tree/master/uke37forslag)-programmet vi har jobbet med i gruppetimene. Plasser gjerne makroen i en egen header `debug.h` (med include guards), så den kan inkluderes av alle filer med behov for debugging.
+Implementer et slikt logging-system i ett av dine egne programmer, eller i [gull](https://github.com/INF1060H11/oppgaver/tree/master/uke37forslag)-programmet vi har jobbet med i gruppetimene. Plasser gjerne makroen i en egen header `debug.h` (med include guards), så den kan inkluderes der det er behov for debugging.
 
 
 ## Oppgaver om operativsystemer:

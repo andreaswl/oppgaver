@@ -1,15 +1,12 @@
 
-Denne uken kommer vi til å se på disk og filsystemer. Hvis det blir tid, og er interesse for det, kan jeg gå igjennom et eksempel der jeg implementerer filoperasjoner i programmet gull, som vi har jobbet med i de tidligere gruppetimene.
+Denne uken er temaet disk og filsystemer. Hvis det blir tid, og er interesse for det, kan jeg gå igjennom et eksempel der jeg implementerer filoperasjoner i det kjente og kjære programmet "gull", som vi har jobbet med i tidligere gruppetimer. Dette er oppgaveteksten jeg tenkte å løse, for de som er interessert:
 
-Dette er oppgaveteksten for oppgaven jeg kommer til å løse, for de som er interessert:
-
-Utvid [den nyeste versjonen av programmet "gull"](.), som vi har jobbet med tidligere, slik at gullkornene lagres til disk når programmet avsluttes, og leses når det starter. Når vi leser gullokornene kan vi dra nytte av funksjonen `File_get_line` som vi skrev da vi løste i oppgave 1, uke 37.
-
+Utvid [programmet "gull"](.), som vi har jobbet med tidligere, slik at gullkornene lagres til disk når programmet avsluttes, og leses når det starter. Når vi leser gullkornene kan vi dra nytte av funksjonen `File_get_line` som vi skrev da vi løste i [oppgave 1, uke 37](https://github.com/INF1060H11/oppgaver/blob/master/uke37forslag/file.c).
 
 
 Relevante begreper:
 
-**Systemkall:** funksjoner som tilbys av operativsystemet overfor programmer (programmerere) for å utføre nyttige oppgaver, som programmet ellers ikke hadde hatt tilgang til. To eksempler er `fopen()` og `fork()`;
+**Systemkall:** funksjoner som tilbys av operativsystemet overfor programmer (programmerere) for å utføre nyttige oppgaver, som programmet ellers ikke hadde hatt tilgang til. To eksempler er `fopen()` og `fork()`.
 
 
 

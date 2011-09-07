@@ -1,10 +1,9 @@
 
-Jeg kommer ikke til å legge ut så mange flere oppgaver i C i løpet av kurset. Vi har dekket det viktigste, og vi kommer til å arbeide videre med det. Det som gjenstår å lære om C, er spredt over de kommende forelesningene og gruppetimene, og handler for det meste om nettverk og kommunikasjon mellom prosesser. Jeg legger også ut teorioppgavene fra tidligere år. Bruk tiden der du har behov.
+Vi har nå dekket det mest grunnleggende av C. Det blir ikke så veldig mange flere C-oppgaver. Det som gjenstår å lære om C, er spredt over de kommende forelesningene og gruppetimene, og handler for det meste om nettverk og kommunikasjon mellom prosesser. Jeg legger også ut teorioppgavene fra tidligere år. Bruk tiden der du har behov.
 
+Jeg planlegger å kanskje arbeide med oppgaven nedenfor i gruppetimen hvis det blir tid. Dere behøver ikke å gjøre den selv, men det er selvfølgelig åpent for dem som har lyst:
 
-Jeg kommer til å arbeide med denne oppgaven i gruppetimen hvis det blir tid. Dere behøver ikke å gjøre den selv, men det er selvfølgelig åpent for dem som har lyst:
-
-Oppdater programmet `gull` som fikk debugging-støtte [sist uke](https://github.com/INF1060H11/oppgaver/tree/master/uke38forslag/gull):
+Arbeid videre med programmet `gull` som fikk debugging-støtte [sist uke](https://github.com/INF1060H11/oppgaver/tree/master/uke38forslag/gull):
 
 - Bruk ringbufferet vi lagde i uke 37 for å lagre gullkornene (`rbuf.h`; ligger allerede i mappen)
 - Lag et nytt menyvalg der brukerne av programmet kan legge til sine egne gullkorn
